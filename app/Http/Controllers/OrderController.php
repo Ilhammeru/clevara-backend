@@ -171,7 +171,7 @@ class OrderController extends Controller
                 'shipping'  => $shipping,
                 'grandTotal'=> $grandTotal
             ];
-            Mail::to($data['email'])->send(new CheckoutMail($mail));
+            // Mail::to($data['email'])->send(new CheckoutMail($mail));
             
             DB::commit();
     
